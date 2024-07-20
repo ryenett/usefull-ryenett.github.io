@@ -1,0 +1,166 @@
+echo "# usefull-ryenett.github.io" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/ryenett/usefull-ryenett.github.io.git
+git push -u origin main
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meine Auto-Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #444;
+        }
+        nav a {
+            color: #fff;
+            padding: 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background: #555;
+        }
+        .container {
+            padding: 20px;
+        }
+        .car-card {
+            background: #fff;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .car-card img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .gallery img {
+            width: 100%;
+            max-width: 300px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        .contact-form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            padding: 10px 20px;
+            background: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Willkommen auf meiner Auto-Website</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">Über uns</a>
+        <a href="#gallery">Galerie</a>
+        <a href="#contact">Kontakt</a>
+    </nav>
+
+    <div class="container" id="home">
+        <h2>Unsere Autos</h2>
+        <div class="car-card">
+            <h3>Auto 1</h3>
+            <img src="https://via.placeholder.com/400x200" alt="Auto 1">
+            <p>Beschreibung des Autos 1. Es ist ein großartiges Auto mit vielen Funktionen.</p>
+        </div>
+        <div class="car-card">
+            <h3>Auto 2</h3>
+            <img src="https://via.placeholder.com/400x200" alt="Auto 2">
+            <p>Beschreibung des Autos 2. Es ist ein großartiges Auto mit vielen Funktionen.</p>
+        </div>
+        <div class="car-card">
+            <h3>Auto 3</h3>
+            <img src="https://via.placeholder.com/400x200" alt="Auto 3">
+            <p>Beschreibung des Autos 3. Es ist ein großartiges Auto mit vielen Funktionen.</p>
+        </div>
+    </div>
+
+    <div class="container" id="about">
+        <h2>Über uns</h2>
+        <p>Wir sind ein führendes Autohaus, das sich auf den Verkauf und Service von Fahrzeugen spezialisiert hat. Unser Ziel ist es, unseren Kunden die besten Fahrzeuge und den besten Service zu bieten.</p>
+    </div>
+
+    <div class="container" id="gallery">
+        <h2>Galerie</h2>
+        <div class="gallery">
+            <img src="https://via.placeholder.com/300" alt="Auto Bild 1">
+            <img src="https://via.placeholder.com/300" alt="Auto Bild 2">
+            <img src="https://via.placeholder.com/300" alt="Auto Bild 3">
+        </div>
+    </div>
+
+    <div class="container" id="contact">
+        <h2>Kontakt</h2>
+        <div class="contact-form">
+            <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Nachricht:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Senden</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Meine Auto-Website
+    </footer>
+
+</body>
+</html>
